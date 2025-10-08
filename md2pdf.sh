@@ -27,14 +27,22 @@ fi
 # Get the directory of this script
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-# Check if config.json exists in the script directory
-CONFIG_FILE="$SCRIPT_DIR/config.json"
+# Auto-detect if this is a cover letter based on filename
+if [[ "$INPUT_FILE" =~ cover.*letter|letter.*cover|cover-letter ]]; then
+    CONFIG_FILE="$SCRIPT_DIR/cover-letter-config.json"
+    DOC_TYPE="cover letter"
+else
+    CONFIG_FILE="$SCRIPT_DIR/config.json"
+    DOC_TYPE="resume"
+fi
+
+# Check if config file exists
 if [ ! -f "$CONFIG_FILE" ]; then
-    echo "Warning: config.json not found at $CONFIG_FILE"
+    echo "Warning: Config file not found at $CONFIG_FILE"
     echo "Running md-to-pdf without config..."
     md-to-pdf "$INPUT_FILE"
 else
-    echo "Converting $INPUT_FILE to PDF using $CONFIG_FILE..."
+    echo "Converting $INPUT_FILE to PDF as $DOC_TYPE using $(basename $CONFIG_FILE)..."
     md-to-pdf "$INPUT_FILE" --config-file "$CONFIG_FILE"
 fi
 

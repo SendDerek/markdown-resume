@@ -1,0 +1,9 @@
+{
+  "stylesheet": ["https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css", "./cover-letter.css"],
+  "body_class": "markdown-body",
+  "pdf_options": {
+    "format": "letter",
+    "margin": "20mm 25mm",
+    "printBackground": true
+  }
+}
