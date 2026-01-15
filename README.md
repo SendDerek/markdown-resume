@@ -57,12 +57,21 @@ Most AI assistants support custom instructions. The general pattern is:
 2. **Context / Knowledge**: Use `MEMORY.md` contents to provide background information
 3. **Keep files updated**: As your experience grows, update `MEMORY.md` to keep AI-generated content accurate
 
+### Discover Your Values First
+
+Before writing your resume, it helps to know what you actually value. This system emphasizes authentic, values-driven storytelling rather than generic corporate language. If you're unsure what your core values are, take the free assessment at:
+
+**[Think2Perform Values Assessment](https://www.think2perform.com/values/)**
+
+Once you know your values (integrity, service, connection, excitement, etc.), you can weave them naturally into your resume bullets and professional summary. This creates a more authentic document that attracts companies aligned with who you actually are.
+
 ### Customizing for Your Own Use
 
 1. Fork this repository
-2. Replace `MEMORY.md` with your own background, experience, and preferences
-3. Modify `CLAUDE.md` to match your resume style and formatting rules
-4. Use the master-resume.md as a template for your comprehensive experience
+2. **Identify your values** using the Think2Perform assessment above
+3. Replace `MEMORY.md` with your own background, experience, and preferences
+4. Modify `CLAUDE.md` to match your resume style and formatting rules
+5. Use the master-resume.md as a template for your comprehensive experience
 
 ## Features
 
