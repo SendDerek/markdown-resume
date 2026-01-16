@@ -444,4 +444,6 @@ This is a personal resume generation system. Feel free to fork and adapt for you
 
 ---
 
-**Pro Tip**: Keep your master resume markdown file comprehensive, then ask Claude.ai to create tailored versions for specific job applications. This lets you maintain one source of truth while customizing for each opportunity! 🚀
+**Pro Tip**: Keep your master resume markdown file comprehensive, then ask Claude.ai to create tailored versions for specific job applications. This lets you maintain one source of truth while customizing for each opportunity!
+
+**Pro Tip**: Use AI to customize the rules and memory files for your own use. Share the existing files with Claude, ChatGPT, or your preferred AI assistant and ask it to update them with your name, job title, values, and experience. AI can also help you write effective experience bullets using the "What you did + How you did it + Why it mattered" formula, turning bland job duties into compelling accomplishments.
